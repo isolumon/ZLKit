@@ -101,6 +101,7 @@
 		6A2369FF1D0E47BD003490EF /* ZLKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6A236A331D0E47FA003490EF /* ZLKit */,
 				6A236A031D0E47BD003490EF /* AppDelegate.h */,
 				6A236A041D0E47BD003490EF /* AppDelegate.m */,
 				6A236A061D0E47BD003490EF /* ViewController.h */,
@@ -138,6 +139,21 @@
 				6A236A271D0E47BD003490EF /* Info.plist */,
 			);
 			path = ZLKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		6A236A331D0E47FA003490EF /* ZLKit */ = {
+			isa = PBXGroup;
+			children = (
+				6A236A341D0E4879003490EF /* ZLCategory */,
+			);
+			path = ZLKit;
+			sourceTree = "<group>";
+		};
+		6A236A341D0E4879003490EF /* ZLCategory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZLCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
