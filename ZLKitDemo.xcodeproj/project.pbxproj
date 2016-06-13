@@ -15,6 +15,8 @@
 		6A236A101D0E47BD003490EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A236A0E1D0E47BD003490EF /* LaunchScreen.storyboard */; };
 		6A236A1B1D0E47BD003490EF /* ZLKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A236A1A1D0E47BD003490EF /* ZLKitDemoTests.m */; };
 		6A236A261D0E47BD003490EF /* ZLKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A236A251D0E47BD003490EF /* ZLKitDemoUITests.m */; };
+		6A78B2F71D0E920C0053BB96 /* NSNumber+ZLCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A78B2F41D0E920C0053BB96 /* NSNumber+ZLCommon.m */; };
+		6A78B2F81D0E920C0053BB96 /* NSString+ZLCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A78B2F61D0E920C0053BB96 /* NSString+ZLCommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		6A236A211D0E47BD003490EF /* ZLKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZLKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A236A251D0E47BD003490EF /* ZLKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLKitDemoUITests.m; sourceTree = "<group>"; };
 		6A236A271D0E47BD003490EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A78B2F31D0E920C0053BB96 /* NSNumber+ZLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ZLCommon.h"; sourceTree = "<group>"; };
+		6A78B2F41D0E920C0053BB96 /* NSNumber+ZLCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ZLCommon.m"; sourceTree = "<group>"; };
+		6A78B2F51D0E920C0053BB96 /* NSString+ZLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZLCommon.h"; sourceTree = "<group>"; };
+		6A78B2F61D0E920C0053BB96 /* NSString+ZLCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZLCommon.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,7 @@
 		6A2369FF1D0E47BD003490EF /* ZLKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6A236A331D0E47FA003490EF /* ZLKit */,
+				6A78B2F11D0E920C0053BB96 /* ZLKit */,
 				6A236A031D0E47BD003490EF /* AppDelegate.h */,
 				6A236A041D0E47BD003490EF /* AppDelegate.m */,
 				6A236A061D0E47BD003490EF /* ViewController.h */,
@@ -141,17 +147,21 @@
 			path = ZLKitDemoUITests;
 			sourceTree = "<group>";
 		};
-		6A236A331D0E47FA003490EF /* ZLKit */ = {
+		6A78B2F11D0E920C0053BB96 /* ZLKit */ = {
 			isa = PBXGroup;
 			children = (
-				6A236A341D0E4879003490EF /* ZLCategory */,
+				6A78B2F21D0E920C0053BB96 /* ZLCategory */,
 			);
 			path = ZLKit;
 			sourceTree = "<group>";
 		};
-		6A236A341D0E4879003490EF /* ZLCategory */ = {
+		6A78B2F21D0E920C0053BB96 /* ZLCategory */ = {
 			isa = PBXGroup;
 			children = (
+				6A78B2F31D0E920C0053BB96 /* NSNumber+ZLCommon.h */,
+				6A78B2F41D0E920C0053BB96 /* NSNumber+ZLCommon.m */,
+				6A78B2F51D0E920C0053BB96 /* NSString+ZLCommon.h */,
+				6A78B2F61D0E920C0053BB96 /* NSString+ZLCommon.m */,
 			);
 			path = ZLCategory;
 			sourceTree = "<group>";
@@ -288,7 +298,9 @@
 			files = (
 				6A236A081D0E47BD003490EF /* ViewController.m in Sources */,
 				6A236A051D0E47BD003490EF /* AppDelegate.m in Sources */,
+				6A78B2F71D0E920C0053BB96 /* NSNumber+ZLCommon.m in Sources */,
 				6A236A021D0E47BD003490EF /* main.m in Sources */,
+				6A78B2F81D0E920C0053BB96 /* NSString+ZLCommon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +524,7 @@
 				6A236A2C1D0E47BD003490EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A236A2D1D0E47BD003490EF /* Build configuration list for PBXNativeTarget "ZLKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +533,7 @@
 				6A236A2F1D0E47BD003490EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A236A301D0E47BD003490EF /* Build configuration list for PBXNativeTarget "ZLKitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +542,7 @@
 				6A236A321D0E47BD003490EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
